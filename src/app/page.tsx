@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+// import Image from "next/image"; // Removed unused Image import
 import Homepage from "./Homepage";
 import Footer from "./home/Footer";
 import TopAffordableUniversities from "./home/TopAffordableUniversities";
