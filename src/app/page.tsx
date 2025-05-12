@@ -9,7 +9,6 @@ import RecentArticles from "./home/RecentArticles";
 import AdmissionEligibility from "./home/AdmissionEligibility";
 import ProcessSteps from "./home/ProcessSteps";
 import ContactWidget from "./home/ContactWidget";
-import Head from 'next/head';
 
 export default function Home() {
   return (
