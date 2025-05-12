@@ -1,4 +1,7 @@
-import { FaWhatsapp, FaPhone } from 'react-icons/fa';
+import React from 'react';
+// import { FaPhone } from 'react-icons/fa'; //Removed unused import
+import { FaWhatsapp } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
 import Link from 'next/link';
 
 const ContactWidget = () => {

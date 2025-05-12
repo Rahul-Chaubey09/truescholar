@@ -1,8 +1,9 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import { Phone, MessageCircle, ArrowRight, Line } from 'lucide-react';
+import Image from 'next/image';
+import { Search, ChevronDown, User, Clock, MapPin, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface UniversityCost {

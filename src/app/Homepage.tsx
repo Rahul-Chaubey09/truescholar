@@ -190,7 +190,7 @@ export default function Homepage() {
           </h1>
           <p className="text-lg mb-6">
             Struggling with high fees or course dissatisfaction? <br />
-            We'll help you transfer to the right university.
+            We&apos;ll help you transfer to the right university.
           </p>
           <button className="bg-[#FF882E] hover:bg=[#FF882E] text-white font-semibold py-3 px-8 rounded-lg shadow h-14 flex items-center justify-center gap-2 overflow-hidden">
             Compare University

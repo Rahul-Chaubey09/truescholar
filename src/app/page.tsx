@@ -1,7 +1,6 @@
-import Image from "next/image";
+import Navbar from "./Navbar";
 import Homepage from "./Homepage";
 import Footer from "./home/Footer";
-import Navbar from "./Navbar";
 import TopAffordableUniversities from "./home/TopAffordableUniversities";
 import PickMyUniComparison from "./home/PickMyUniComparison";
 import Testimonials from "./home/Testimonials";
@@ -9,6 +8,7 @@ import RecentArticles from "./home/RecentArticles";
 import AdmissionEligibility from "./home/AdmissionEligibility";
 import ProcessSteps from "./home/ProcessSteps";
 import ContactWidget from "./home/ContactWidget";
+import Head from 'next/head';
 
 export default function Home() {
   return (

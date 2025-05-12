@@ -1,18 +1,13 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button'; // Removed
 // import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'; //Removed
-import {
-    Sheet,
-    SheetContent,
-    SheetHeader,
-    SheetTitle,
-    SheetTrigger,
-} from "@/components/ui/sheet"
+// Removed unused Sheet imports
 import { Menu, ChevronDown, X } from 'lucide-react'; // Import icons
 import { cn } from "@/lib/utils" //Added this for conditional classes, will help with styling
 import Image from 'next/image';
+import Link from 'next/link'; // Import Link
 import { usePathname } from 'next/navigation';
 
 interface NavbarProps {
@@ -46,15 +41,15 @@ const Navbar = ({ className }: NavbarProps) => {
                 <div className="flex items-center justify-between h-12 sm:h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center">
-                        <a href="#" className="text-lg sm:text-xl font-bold text-[#2C5680]">
+                        <Link href="/" className="text-lg sm:text-xl font-bold text-[#2C5680]">
                             Dummy Name
-                        </a>
+                        </Link>
                         <Image src="/Group.png" alt="arrow-right" width={40} height={12} className="inline-block lg:w-[50px] lg:h-[54px] sm:w-[50px] sm:h-[14px]" />
                     </div>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-3 lg:gap-6">
-                        <a href="/" className={cn("transition-colors text-sm lg:text-base", isActive('/'))}>Home</a>
+                        <Link href="/" className={cn("transition-colors text-sm lg:text-base", isActive('/'))}>Home</Link>
                         <div className="relative group">
                             <button 
                                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -148,7 +143,7 @@ const Navbar = ({ className }: NavbarProps) => {
                     </button>
                 </div>
                 <div className="space-y-4">
-                    <a href="/" className={cn("block py-2 rounded-md transition-colors text-base hover:bg-gray-100", isActive('/'))}>Home</a>
+                    <Link href="/" className={cn("block py-2 rounded-md transition-colors text-base hover:bg-gray-100", isActive('/'))}>Home</Link>
                     <div className="space-y-1">
                         <button 
                             onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}

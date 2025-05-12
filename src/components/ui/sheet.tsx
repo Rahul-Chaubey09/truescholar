@@ -2,12 +2,10 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 interface SheetProps {
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
   children: React.ReactNode;
 }
 
-export function Sheet({ open, onOpenChange, children }: SheetProps) {
+export function Sheet({ children }: SheetProps) {
   return <>{children}</>;
 }
 
@@ -49,6 +47,6 @@ export function SheetTitle({ children }: { children: React.ReactNode }) {
   return <h2 className="text-lg font-bold">{children}</h2>;
 }
 
-export function SheetTrigger({ asChild, children }: { asChild?: boolean; children: React.ReactNode }) {
+export function SheetTrigger({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 } 
